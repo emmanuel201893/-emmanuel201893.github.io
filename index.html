@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="/Framework/w3 css/w3.css" rel="stylesheet" type="text/css">
+<link href="/Framework/bootstrap-5.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/Framework/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="/Framework/bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="/fontawesome-free-6.6.0-web/css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="/fontawesome-free-6.6.0-web/css/brands.css">
+<link rel="stylesheet" type="text/css" href="/fontawesome-free-6.6.0-web/css/solid.css">
+    <title>Document</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+background-image: url(/images/8k_ultra_hd___wallpaper_by_themingarts_dfo0r0t-fullview.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+#company-name{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: bolder;
+color: white;
+font-size: 25px;
+text-shadow: 2px 2px blue;
+}
+.top-item>a {
+    font-weight: bold;
+color: white;
+text-decoration: none;
+border-radius: 20px;
+padding: 10px 10px;
+}
+li>a {
+    text-decoration: none;
+    font-size: 14px;
+}
+li:hover {
+    background-color: rgb(205,205,240);
+}
+form {
+border-radius: 10px;
+background-color: rgba(218,230,240,0.3);
+width: 100%;
+height: 100%;
+}
+label {
+    color: rgb(125,221,197);
+    font-weight: bolder;
+}
+
+#search_title::first-letter {
+font-family: cursive;
+font-size: xx-large;
+}
+
+@media screen and (max-width:825px) {
+    #company-name {
+        display: none;
+    }
+    .inn {
+        text-align: center;
+    }
+li {
+    text-align:left;
+}
+footer {
+    position:relative !important;
+    padding-top: 80px;
+}
+.foot {
+    width: 100%;
+}
+
+}
+
+#content {
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+position: absolute;
+bottom: 0%;
+width: 100%;
+}
+
+span>a{
+text-decoration: none;
+margin-left: 3px;
+margin-right: 15px;
+} 
+#search {
+border: 1px solid #eeeeee;
+height: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="w3-container">
+        <div class="top row mt-3" >
+            <div class="top-item col-sm-12 col-md-1 text-center" id="logo" title="Abdul-international motors">
+                <img src="/images/dark-night-rain-car-wallpaper-preview.jpg" style="border-radius: 50%; width: 60px; height: 60px; alt: logo;">
+            </div>
+                    
+            <div class="top-item col-sm-12 col-md-7" id="company-name">
+                ABDUL-INTERNATIONAL MOTORS
+            </div>
+            <div class="top-item col-sm-12 col-md-2 mb-2 mt-1 inn">
+                <div class="w3-larger w3-text-white w3-dropdown-hover" style="background: transparent;">Our services
+                    <div class="w3-dropdown-content">
+                        <ul>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Repairs & maintenance</a></li>
+                            <li><a href="#">Car hires</a></li>
+                            <li><a href="#">Consultancy Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top-item col-sm-12 col-md-2 mb-1 mt-1 inn">
+                <a href="#" class="w3-blue">Order Now</a>
+            </div>
+        </div>
+        <div class="row" id="content">
+            <div class="top-item col-sm-6 col-md-4">
+                <br><br>
+                <div style="font-size: x-large;  font-weight:bolder;" class="w3-text-white" id="search_title">Explore Our Cars</div>
+                <form class="p-2 pe-2">
+                    <label for="Car" class="w3-text-bold mb-2">Type:</label>
+                    <select id="Car" class="form-control mb-2" required>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Golf">Golf</option>
+                        <option value="Ford">Ford</option>
+                        <option value="honder">honder</option>
+                        <option value="benz">benz</option>
+                        <option value="Audi">Audi</option>
+                        <option value="puegeot">puegeot</option>
+                    </select><br>
+                    <label for="Model">Model:</label>
+                    <input type="text" class="form-control mb-3" name="Model" id="Model"><br>
+                    <div class="text-center">
+                        <input type="submit" value="search" class="btn btn-success">
+                    </div>
+                </form>
+                <form style="display: none;">
+                    <div style="width:100%; height: 32px;border: 2px solid #dddddd; border-radius: 5px; background-color: #dddddd;">
+                        <span>
+                            <input type="search" class="" name="search" id="search">
+                        </span>
+                        <span>
+                            <input type="submit" value="search" class="w3-transparent text-success" style="width: 20%; height: 30px; border: none;">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div><br><br>
+
+        <footer class="row">
+        <hr style="border-width: 3px; border-color: aliceblue;">
+        <div class="col-sm-12 col-md-3 col-lg-3 foot">
+            <span class="fa fa-map-location w3-text-green"></span>
+        <strong class="w3-text-blue">MAIN OFFICE</strong>
+        <p class="w3-text-white">No. 2 constitution road. Kaduna.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-3 col-lg-3 foot">
+            <span class="fa fa-map-location w3-text-white "></span>
+        <strong class="w3-text-blue">BRANCH OFFICE</strong>
+        <p class="w3-text-white">No. 3 Lamido road. Ikeja, Lagos.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 foot">
+        <span class="fa-brands fa-facebook w3-text-blue"><a href="#" class="w3-small">face-book</a></span>
+        <span class="fa-brands fa-twitter w3-text-blue"><a href="#" class="w3-small">Twitter</a></span>
+        <span class="fa-brands fa-linkedin w3-text-blue"><a href="#" class="w3-small">Linkedin</a></span>
+        <p class="w3-text-white"><i class="fa fa-phone w3-text-blue"></i>09029040586, 08064448128</p>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2 foot">
+        <a href="#" class="w3-text-white">About Us</a>
+        <span class="fa fa-copyright w3-text-blue"><small>Copy right 2024</span>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>
